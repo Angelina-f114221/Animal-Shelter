@@ -42,13 +42,13 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colSpecies = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colState = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnAdopt = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.colState = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colSpecies = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colAge = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericAge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -75,6 +75,7 @@
             // 
             this.comboSpecies.FormattingEnabled = true;
             this.comboSpecies.Items.AddRange(new object[] {
+            "",
             "Cat",
             "Dog",
             "Rabbit",
@@ -114,6 +115,7 @@
             // 
             this.comboState.FormattingEnabled = true;
             this.comboState.Items.AddRange(new object[] {
+            "",
             "Adopted",
             "Not adopted"});
             this.comboState.Location = new System.Drawing.Point(109, 149);
@@ -138,6 +140,7 @@
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnAdd
             // 
@@ -156,6 +159,7 @@
             this.btnClear.TabIndex = 10;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnUpdate
             // 
@@ -193,6 +197,36 @@
             this.dataGridView1.Size = new System.Drawing.Size(738, 167);
             this.dataGridView1.TabIndex = 13;
             // 
+            // colName
+            // 
+            this.colName.HeaderText = "Name";
+            this.colName.MinimumWidth = 6;
+            this.colName.Name = "colName";
+            // 
+            // colID
+            // 
+            this.colID.HeaderText = "ID";
+            this.colID.MinimumWidth = 6;
+            this.colID.Name = "colID";
+            // 
+            // colAge
+            // 
+            this.colAge.HeaderText = "Age";
+            this.colAge.MinimumWidth = 6;
+            this.colAge.Name = "colAge";
+            // 
+            // colSpecies
+            // 
+            this.colSpecies.HeaderText = "Species";
+            this.colSpecies.MinimumWidth = 6;
+            this.colSpecies.Name = "colSpecies";
+            // 
+            // colState
+            // 
+            this.colState.HeaderText = "State";
+            this.colState.MinimumWidth = 6;
+            this.colState.Name = "colState";
+            // 
             // btnAdopt
             // 
             this.btnAdopt.Location = new System.Drawing.Point(149, 10);
@@ -214,36 +248,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(286, 118);
             this.panel1.TabIndex = 16;
-            // 
-            // colState
-            // 
-            this.colState.HeaderText = "State";
-            this.colState.MinimumWidth = 6;
-            this.colState.Name = "colState";
-            // 
-            // colSpecies
-            // 
-            this.colSpecies.HeaderText = "Species";
-            this.colSpecies.MinimumWidth = 6;
-            this.colSpecies.Name = "colSpecies";
-            // 
-            // colAge
-            // 
-            this.colAge.HeaderText = "Age";
-            this.colAge.MinimumWidth = 6;
-            this.colAge.Name = "colAge";
-            // 
-            // colID
-            // 
-            this.colID.HeaderText = "ID";
-            this.colID.MinimumWidth = 6;
-            this.colID.Name = "colID";
-            // 
-            // colName
-            // 
-            this.colName.HeaderText = "Name";
-            this.colName.MinimumWidth = 6;
-            this.colName.Name = "colName";
             // 
             // panel2
             // 

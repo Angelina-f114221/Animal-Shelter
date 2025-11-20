@@ -8,3 +8,4 @@ C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\A
 C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.csproj.CoreCompileInputs.cache
 C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.exe
 C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.pdb
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.exe.config

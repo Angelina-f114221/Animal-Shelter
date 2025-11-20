@@ -16,5 +16,18 @@ namespace AnimalShelter
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtName.Text = "";
+            numericAge.Value = 0;
+            comboSpecies.SelectedIndex = 0;
+            comboState.SelectedIndex = 0;
+        }
     }
 }
