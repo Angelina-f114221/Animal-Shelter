@@ -1,0 +1,10 @@
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\bin\Debug\AnimalShelter.exe.config
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\bin\Debug\AnimalShelter.exe
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\bin\Debug\AnimalShelter.pdb
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.csproj.AssemblyReference.cache
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.Form1.resources
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.Properties.Resources.resources
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.csproj.GenerateResource.cache
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.csproj.CoreCompileInputs.cache
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.exe
+C:\Users\Angelina\Desktop\Uni\project_c#\AnimalShelter\AnimalShelter\obj\Debug\AnimalShelter.pdb
