@@ -54,6 +54,9 @@ namespace AnimalShelter
                             return;
                     }
                     nextId++;
+                    Animal lastAnimal = (Animal)animalList[animalList.Count - 1];
+                    dataGridView1.Rows.Add(lastAnimal.Name, lastAnimal.ID, lastAnimal.Age, lastAnimal.Species, lastAnimal.State);
+
                 }
                 catch (Exception ex)
                 {

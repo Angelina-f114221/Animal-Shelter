@@ -42,7 +42,6 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnAdopt = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -134,7 +133,7 @@
             // 
             this.btnExit.Location = new System.Drawing.Point(9, 78);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(134, 29);
+            this.btnExit.Size = new System.Drawing.Size(127, 28);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
@@ -144,7 +143,7 @@
             // 
             this.btnAdd.Location = new System.Drawing.Point(9, 10);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(134, 29);
+            this.btnAdd.Size = new System.Drawing.Size(127, 28);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -154,7 +153,7 @@
             // 
             this.btnClear.Location = new System.Drawing.Point(9, 44);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(134, 29);
+            this.btnClear.Size = new System.Drawing.Size(127, 28);
             this.btnClear.TabIndex = 10;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -162,7 +161,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(149, 44);
+            this.btnUpdate.Location = new System.Drawing.Point(147, 24);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(127, 28);
             this.btnUpdate.TabIndex = 11;
@@ -171,7 +170,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(149, 78);
+            this.btnDelete.Location = new System.Drawing.Point(146, 58);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(127, 28);
             this.btnDelete.TabIndex = 12;
@@ -195,18 +194,8 @@
             this.dataGridView1.Size = new System.Drawing.Size(738, 167);
             this.dataGridView1.TabIndex = 13;
             // 
-            // btnAdopt
-            // 
-            this.btnAdopt.Location = new System.Drawing.Point(149, 10);
-            this.btnAdopt.Name = "btnAdopt";
-            this.btnAdopt.Size = new System.Drawing.Size(127, 28);
-            this.btnAdopt.TabIndex = 15;
-            this.btnAdopt.Text = "Adopt";
-            this.btnAdopt.UseVisualStyleBackColor = true;
-            // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnAdopt);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnUpdate);
             this.panel1.Controls.Add(this.btnClear);
@@ -297,7 +286,6 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btnAdopt;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridViewTextBoxColumn colName;
