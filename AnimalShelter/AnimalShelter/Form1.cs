@@ -81,7 +81,32 @@ namespace AnimalShelter
                 MessageBox.Show("Select a row to delete!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-        
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int row = dataGridView1.SelectedRows[0].Index;
+                Animal updated = (Animal)animalList[row];
+
+                updated.Name = txtName.Text;
+                updated.Age = Convert.ToInt32(numericAge.Value);
+                updated.Species = comboSpecies.Text;
+                updated.State = comboState.Text;
+
+                dataGridView1.Rows[row].SetValues(updated.Name, updated.ID, updated.Age, updated.Species, updated.State);
+            }
+            else
+            {
+                MessageBox.Show("Select a row to update!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(1025, 600); 
+
+        }
+
     }
     public class Animal
     {
