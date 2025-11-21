@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace AnimalShelter
 {
     public partial class Form1:Form
     {
+        ArrayList animalList;
+        int nextId = 1;
         public Form1()
         {
             InitializeComponent();
+            animalList = new ArrayList();
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -26,6 +30,39 @@ namespace AnimalShelter
             {
                 if (!(ctr is Label))
                     ctr.Text = "";
+            }
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if (txtName.Text != "" && comboSpecies.Text != "" && numericAge.Value != 0 && comboState.Text != "")
+            {
+                try
+                {
+                    switch (comboSpecies.Text)
+                    {
+                        case "Dog":
+                            animalList.Add(new Dog(nextId, txtName.Text, Convert.ToInt32(numericAge.Value), comboSpecies.Text, comboState.Text));
+                            break;
+                        case "Cat":
+                            animalList.Add(new Cat(nextId, txtName.Text, Convert.ToInt32(numericAge.Value), comboSpecies.Text, comboState.Text));
+                            break;
+                        case "Hamster":
+                            animalList.Add(new Hamster(nextId, txtName.Text, Convert.ToInt32(numericAge.Value), comboSpecies.Text, comboState.Text));
+                            break;
+                        default:
+                            MessageBox.Show("Choose a species!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return;
+                    }
+                    nextId++;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Missing data!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
