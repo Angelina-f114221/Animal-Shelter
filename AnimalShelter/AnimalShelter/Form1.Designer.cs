@@ -78,9 +78,7 @@
             "",
             "Cat",
             "Dog",
-            "Rabbit",
-            "Parrot",
-            "Hamster"});
+            "Rabbit"});
             this.comboSpecies.Location = new System.Drawing.Point(109, 103);
             this.comboSpecies.Name = "comboSpecies";
             this.comboSpecies.Size = new System.Drawing.Size(126, 24);
