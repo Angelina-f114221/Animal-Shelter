@@ -56,7 +56,8 @@ namespace AnimalShelter
                     nextId++;
                     Animal lastAnimal = (Animal)animalList[animalList.Count - 1];
                     dataGridView1.Rows.Add(lastAnimal.Name, lastAnimal.ID, lastAnimal.Age, lastAnimal.Species, lastAnimal.State);
-
+                    btnDelete.Enabled = true;
+                    btnUpdate.Enabled = true;
                 }
                 catch (Exception ex)
                 {
@@ -100,11 +101,11 @@ namespace AnimalShelter
                 MessageBox.Show("Select a row to update!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Size = new Size(1025, 600); 
-
+            btnDelete.Enabled = false;
+            btnUpdate.Enabled = false;
         }
 
     }
@@ -161,10 +162,4 @@ namespace AnimalShelter
             return $"Hamster - {base.ToString()}";
         }
     }
-
-    
-
-
-
-
 }
