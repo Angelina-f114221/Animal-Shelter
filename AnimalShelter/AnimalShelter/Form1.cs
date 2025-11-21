@@ -68,6 +68,20 @@ namespace AnimalShelter
                 MessageBox.Show("Missing data!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count > 0)
+            {
+                int row = dataGridView1.SelectedRows[0].Index;
+                animalList.RemoveAt(row);
+                dataGridView1.Rows.RemoveAt(row);
+            }
+            else
+            {
+                MessageBox.Show("Select a row to delete!", "ERROR!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+        
     }
     public class Animal
     {

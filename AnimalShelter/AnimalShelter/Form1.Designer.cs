@@ -77,7 +77,7 @@
             "",
             "Cat",
             "Dog",
-            "Rabbit"});
+            "Hamster"});
             this.comboSpecies.Location = new System.Drawing.Point(109, 103);
             this.comboSpecies.Name = "comboSpecies";
             this.comboSpecies.Size = new System.Drawing.Size(126, 24);
@@ -167,6 +167,7 @@
             this.btnUpdate.TabIndex = 11;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -176,6 +177,7 @@
             this.btnDelete.TabIndex = 12;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // dataGridView1
             // 
