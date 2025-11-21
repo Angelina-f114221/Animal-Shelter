@@ -22,10 +22,11 @@ namespace AnimalShelter
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
-            txtName.Text = "";
-            numericAge.Value = 0;
-            comboSpecies.SelectedIndex = 0;
-            comboState.SelectedIndex = 0;
+            foreach (Control ctr in panel2.Controls)
+            {
+                if (!(ctr is Label))
+                    ctr.Text = "";
+            }
         }
     }
     public class Animal
